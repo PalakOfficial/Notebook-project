@@ -1,0 +1,135 @@
+
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+      <div class="loader">
+          <div class="ytp-spinner">
+              <div class="ytp-spinner-container">
+                  <div class="ytp-spinner-rotator">
+                      <div class="ytp-spinner-left">
+                          <div class="ytp-spinner-circle"></div>
+                      </div>
+                      <div class="ytp-spinner-right">
+                          <div class="ytp-spinner-circle"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--====== PRELOADER PART ENDS ======-->
+
+<!--======Header===========-->
+
+<div class="navbar-area">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="index.html">
+                    <div class="mobile-only-brand pull-left">
+                      <div class="nav-header pull-left">
+                        <div class="logo-wrap">
+                          <span class="brand-text">NOTEbook</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="toggler-icon"></span>
+                      <span class="toggler-icon"></span>
+                      <span class="toggler-icon"></span>
+                  </button>
+
+
+                  <ng-container *ngIf="login === 'true'" style="visibility: hidden;">
+                    <div class="navbar-btn d-none d-sm-inline-block text-right">
+                      <button class="main-btn" (click)="logout()" >Logout</button>
+                    </div>
+                  </ng-container>
+                  <ng-container *ngIf="login !== 'true'" style="visibility: hidden;">
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                      <ul id="nav" class="navbar-nav ml-auto">
+                          <li class="nav-item ">
+                              <a class="page-scroll" [routerLink]="['/dashboard/usage']">Usage</a>
+                          </li>
+                          <!-- <li class="nav-item">
+                              <a class="page-scroll" href="#features">Features</a>
+                          </li> -->
+                          <li class="nav-item">
+                              <a class="page-scroll" [routerLink]="['/dashboard/aboutUs']">About</a>
+                          </li>
+
+                      </ul>
+                  </div>
+                    <div class="navbar-btn d-none d-sm-inline-block ">
+                      <a class="main-btn"  data-scroll-nav="0" [routerLink]="['/dashboard/login']">Sign-In</a>
+                    </div>
+                    <div class="navbar-btn d-none d-sm-inline-block ml-20">
+                      <a class="main-btn"  [routerLink]="['/dashboard/register']">Sign-Up</a>
+                    </div>
+                  </ng-container>
+
+              </nav> <!-- navbar -->
+          </div>
+      </div> <!-- row -->
+  </div> <!-- container -->
+</div> <!-- navbar area -->
+<!--===========/Header===========-->
+
+  <!--====== BRAMD PART START ======-->
+
+
+  <!--====== BRAMD PART ENDS ======-->
+
+<router-outlet></router-outlet>
+
+  <!--====== ABOUT PART ENDS ======-->
+
+  <!--====== VIDEO COUNTER PART START ======-->
+
+
+  <!--====== VIDEO COUNTER PART ENDS ======-->
+
+  <!--====== TEAM PART START ======-->
+
+  <!--====== TEAM PART ENDS ======-->
+
+  <!--====== TESTIMONIAL PART START ======-->
+
+  <!--====== TESTIMONIAL PART ENDS ======-->
+
+  <!--====== BLOG PART START ======-->
+
+
+  <!--====== BLOG PART ENDS ======-->
+
+  <!--====== FOOTER PART START ======-->
+
+
+
+  <!--====== FOOTER PART ENDS ======-->
+
+  <!--====== BACK TOP TOP PART START ======-->
+
+  <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+  <!--====== BACK TOP TOP PART ENDS ======-->
+
+  <!--====== PART START ======-->
+
+<!--
+  <section class="">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-"></div>
+          </div>
+      </div>
+  </section>
+-->
